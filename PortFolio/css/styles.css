@@ -15,7 +15,6 @@
     box-sizing: border-box;
 }
 body,button,textarea,input{
-    background: burlywood;
     font-family: 'poppins',sans-serif;
 }
 a{
@@ -54,10 +53,32 @@ img{
     margin-left: 1.5rem;
 }
 .image{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.z-index{
+    position: relative;
+    z-index: 2;
+}
+.overlay.overlay-lg .shape{
+    height: 55px;
+    }
+    .overlay.overlay-lg .shape.xshape{
+        height: 38px;
+    }
+    
+    .overlay.overlay-lg .shape.wave{
+        height: initial;
+        width: 88px;
+    }
+    .points{
+       opacity: .3;
+       position: absolute; 
+       bottom: -75px;
+       left: -150px;
+    }
 /**End Of General Stylessssss*/
 /*The beging of the header**/
 
@@ -150,9 +171,52 @@ color: var(--main-color);
     opacity: 0.13;
     position: absolute;
 }
-.overlay.overlay-lg .shape{
-height: 55px;
+
+header .square{
+    right: 68%;
+    top: 71%;
 }
+header .triangle{
+    right: 7%;
+    top: 75%;
+}
+header .xshape{
+    right: 4%;
+    bottom: 50%;
+}
+header .half-circle{
+    left: 50%;
+    bottom: 82%;
+}
+header .half-circle2{
+    left: 5%;
+    top: 67%;
+}
+header .wave1{
+    bottom: 75%;
+    left: 20%;
+}
+
+header .wave2{
+    bottom: 8%;
+    left: 40%;
+}
+
+header .circle{
+    left: 38%;
+    bottom: 63%;
+}
+header .points1{
+    width: 420px;
+}
+
+header .points2{
+    width: 70%;
+    top: 65%;
+    left:71%;
+}
+  
+
 .overlay{
     position: absolute;
     width: 100%;
